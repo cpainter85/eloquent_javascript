@@ -1,4 +1,4 @@
-var size = 8, chessBoard = ''
+var size = 8, chessBoard = '';
 
 for (var row = 1; row <= size; row++) {
   for (var space = 1; space <=size; space ++ ){
@@ -18,7 +18,22 @@ for (var row = 1; row <= size; row++) {
       }
     }
   }
-  chessBoard += '\n'
+  chessBoard += '\n';
 }
 
 console.log(chessBoard);
+
+
+// with ternary operator but jsbin didn't like it
+//
+// for (var row = 1; row <= size; row++) {
+//   for (var space = 1; space <=size; space ++ ){
+//     if (row % 2 === 0) {
+//       (space % 2 === 0) ? chessBoard += ' ' : chessBoard += '#';
+//     }
+//     else {
+//       (space % 2 === 0) ? chessBoard += '#' : chessBoard += ' ';
+//     }
+//   }
+//   chessBoard += '\n'
+// }
