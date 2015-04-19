@@ -1,7 +1,20 @@
-var range = function (start, finish) {
+var range = function (start, finish, step) {
   var result = [];
-  for (var i = start; i <= finish; i++) {
-    result.push(i);
+  if (arguments.length === 2 && start < finish) {
+    var step = 1
+  }
+  else if (arguments.length ===2 && start > finish) {
+    var step = -1
+  }
+  if (step > 0) {
+    for (var i = start; i <= finish; i+=step) {
+      result.push(i);
+    }
+  }
+  else {
+    for (var i = start; i >= finish; i+=step) {
+      result.push(i);
+    }
   }
   return result;
 }
