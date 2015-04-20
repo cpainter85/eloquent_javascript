@@ -7,7 +7,7 @@ var countBs = function(string) {
     }
   }
   return count;
-}
+};
 
 var countChar = function(string, character) {
   var count = 0;
@@ -18,4 +18,4 @@ var countChar = function(string, character) {
     }
   }
   return count;
-}
+};
