@@ -4,7 +4,7 @@ var reverseArray = function (array) {
     result.unshift(array[index]);
   }
   return result;
-}
+};
 
 var reverseArrayInPlace = function(array) {
   for (var index = 0; index < Math.floor(array.length/2); index ++){
@@ -13,4 +13,4 @@ var reverseArrayInPlace = function(array) {
     array[array.length - 1 - index] = value_holder;
   }
   return array;
-}
+};
