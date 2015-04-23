@@ -4,7 +4,7 @@ var flatten = function (array) {
   var newArray = array.reduce(function (a, b) {
     return a.concat(b);
   });
-  return newArray
+  return newArray;
 };
 
 console.log(flatten(arrays));
